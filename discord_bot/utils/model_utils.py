@@ -1,5 +1,5 @@
-from tensorflow.keras.models import Sequential, load_model
-from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.python.keras.models import Sequential, load_model as tf_load_model
+from tensorflow.python.keras.layers import Dense, Dropout
 import numpy as np
 
 def create_model(input_shape, num_classes):
@@ -35,4 +35,4 @@ def load_model(path):
     """
     Загружает модель из файла.
     """
-    return load_model(path)
+    return tf_load_model(path)

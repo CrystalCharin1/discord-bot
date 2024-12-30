@@ -18,7 +18,11 @@ X = np.array([
 ])
 
 # Инициализация бота
-bot = commands.Bot(command_prefix="!")
+bot = commands.Bot(
+    command_prefix="!",
+    status=disnake.Status.online,
+    activity=disnake.Game(name="В рыбалку")
+)
 
 # Функция для анализа текста
 def contains_keywords(text):
