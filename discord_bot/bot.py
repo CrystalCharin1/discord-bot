@@ -10,7 +10,6 @@ from utils.config import KEYWORDS, MODEL_PATH
 # Загрузка модели
 model = load_model(MODEL_PATH)
 
-# Данные для нормализации (пример)
 X = np.array([
     [220.0, 1.2, 0.8, 0.5],  # Пользователь 1
     [440.0, 0.9, 1.1, 0.7],  # Пользователь 2
